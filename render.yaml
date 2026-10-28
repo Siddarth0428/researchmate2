@@ -1,19 +1,14 @@
 services:
   - type: web
     name: researchmate
-    env: python
-    buildCommand: cd frontend && npm install && npm run build && cd .. && pip install -r requirements.txt
-    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    env: docker
+    dockerfilePath: ./Dockerfile
     envVars:
       - key: PORT
         value: 10000
+      - key: CORS_ORIGINS
+        value: *
       - key: OLLAMA_BASE_URL
         sync: false
       - key: OLLAMA_MODEL
         sync: false
-      - key: DATABASE_PATH
-        value: researchmate.db
-      - key: STORAGE_DIR
-        value: storage
-      - key: CORS_ORIGINS
-        value: *
