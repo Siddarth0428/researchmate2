@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: researchmate-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: OLLAMA_BASE_URL
+        sync: false
+      - key: OLLAMA_MODEL
+        sync: false
+      - key: DATABASE_PATH
+        value: researchmate.db
+      - key: STORAGE_DIR
+        value: storage
+      - key: CORS_ORIGINS
+        sync: false
