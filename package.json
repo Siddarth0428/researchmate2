@@ -1,0 +1,11 @@
+{
+  "name": "researchmate",
+  "version": "1.0.0",
+  "description": "ResearchMate — Autonomous Research Intelligence",
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build"
+  },
+  "author": "ResearchMate Team",
+  "license": "MIT"
+}

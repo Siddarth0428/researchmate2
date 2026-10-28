@@ -1,0 +1,48 @@
+# Environment
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+researchmate.db
+
+# Storage
+storage/
+
+# Node
+node_modules/
+frontend/node_modules/
+*.log
+npm-debug.log*
+.yarn-integrity
+.yarn-metadata.json
+.yarn-error.log
+.yarn-state.yml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
+*.egg-info/
+.eggs/
