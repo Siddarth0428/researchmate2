@@ -10,7 +10,7 @@ from fastapi.responses import FileResponse, Response
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from backend.config import PAPERS_DIR, REPORTS_DIR, OLLAMA_BASE_URL, DEFAULT_OLLAMA_MODEL
+from backend.config import BASE_DIR, PAPERS_DIR, REPORTS_DIR, OLLAMA_BASE_URL, DEFAULT_OLLAMA_MODEL
 from backend.database import init_db, get_connection
 from backend.schemas import (
     PaperResponse, PaperAnalysisResponse, HealthResponse,
